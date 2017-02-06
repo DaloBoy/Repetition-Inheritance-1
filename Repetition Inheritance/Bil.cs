@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repetition_Inheritance
 {
-    class Bil
+   public class Bil
     {
 
         public double BilPrisExAfgift { get; private set; }
@@ -53,13 +53,13 @@ namespace Repetition_Inheritance
             return 1000;
         }
 
-        public Bil(string Mærke, double PrisExAfgift, int KøbsÅr, int KmPrLiter)
+        public Bil(string Mærke, double PrisExAfgift, int KøbsÅr, int KmPrLiter, string RegistreringsNr)
         {
             this.BilPrisExAfgift = PrisExAfgift;
             this.KmPrLiter = KmPrLiter;
             this.Mærke = Mærke;
             this.KøbsÅr = KøbsÅr;
-
+            this.RegistreringsNr = RegistreringsNr;
         }
 
 
