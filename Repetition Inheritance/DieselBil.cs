@@ -28,7 +28,7 @@ namespace Repetition_Inheritance
         
         public override int HalvÅrligEjerafgift()
         {
-            int ejerafgift = base.HalvÅrligEjerafgift();
+            int ejerafgift = 1000;
             if (PartikelFilter == false)
             {
                 ejerafgift += 500;
