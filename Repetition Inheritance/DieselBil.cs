@@ -28,7 +28,21 @@ namespace Repetition_Inheritance
         
         public override int HalvÅrligEjerafgift()
         {
-            int ejerafgift = 1000;
+            int ejerafgift = 0;
+            if (KmPrLiter < 15)
+            {
+                ejerafgift = 2000;
+            }
+            if (KmPrLiter >= 15 || KmPrLiter <= 25)
+            {
+                ejerafgift = 1000;
+            }
+            if (KmPrLiter > 25)
+            {
+                ejerafgift = 350;
+            }
+
+            
             if (PartikelFilter == false)
             {
                 ejerafgift += 500;
