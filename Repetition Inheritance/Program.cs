@@ -31,7 +31,7 @@ namespace Repetition_Inheritance
             elBils.Add(new ElBil("cheveolet", 200000, 2017, "8Y5C", 10, 23));
             elBils.Add(new ElBil("Tesla", 700000, 2017, "7UP9", 10, 60));
 
-            List<Bil> bils = new List<Bil>();
+            List<IBil> bils = new List<IBil>();
             bils.Add(new DieselBil("BMW", 200000, 2006, 10, "23r23r", 69));
             bils.Add(new DieselBil("Porche", 800000, 2015, 32, "hewh45h", 7));
             bils.Add(new DieselBil("Skoda", 300000, 2004, 20, "w4h4h5h4", 6, false));
@@ -70,7 +70,7 @@ namespace Repetition_Inheritance
             //}
             //Console.ReadLine();
 
-            foreach (Bil bil in bils)
+            foreach (IBil bil in bils)
             {
                 if (bil is ElBil)
                 {
