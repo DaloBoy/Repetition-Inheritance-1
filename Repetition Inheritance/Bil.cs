@@ -60,6 +60,9 @@ namespace Repetition_Inheritance
             this.RegistreringsNr = RegistreringsNr;
         }
 
+        public abstract int Rækkevidde();
+        
+
 
     }
 }
