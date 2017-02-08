@@ -40,6 +40,7 @@ namespace Repetition_Inheritance
                     regafgift = (BilPrisExAfgift * 1.8) / 100;
                 }
             }
+            
             return regafgift;
         }
 
@@ -55,6 +56,14 @@ namespace Repetition_Inheritance
         {
             this.BilPrisExAfgift = PrisExAfgift;
             this.KmPrLiter = KmPrLiter;
+            this.Mærke = Mærke;
+            this.KøbsÅr = KøbsÅr;
+            this.RegistreringsNr = RegistreringsNr;
+        }
+
+        public Bil(string Mærke, double PrisExAfgift, int KøbsÅr, string RegistreringsNr)
+        {
+            this.BilPrisExAfgift = PrisExAfgift;            
             this.Mærke = Mærke;
             this.KøbsÅr = KøbsÅr;
             this.RegistreringsNr = RegistreringsNr;

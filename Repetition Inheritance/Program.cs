@@ -24,6 +24,13 @@ namespace Repetition_Inheritance
             benzinBils.Add(new BenzinBil("Kia", 740000, 2004, 15, "9wmvw4v", 8));
             benzinBils.Add(new BenzinBil("Lamboghini", 1400000, 2004, 9, "a9je4rv", 5));
 
+            List<ElBil> elBils = new List<ElBil>();
+            elBils.Add(new ElBil("BMW", 250000, 2010, "3D2S", 10, 20));
+            elBils.Add(new ElBil("Nissan", 170000, 2017, "4D2W", 5, 50));
+            elBils.Add(new ElBil("Toyota", 150000, 2017, "9F4T", 5, 15));
+            elBils.Add(new ElBil("cheveolet", 200000, 2017, "8Y5C", 10, 23));
+            elBils.Add(new ElBil("Tesla", 700000, 2017, "7UP9", 10, 60));
+
             foreach (DieselBil biler in dieselBils)
             {
                 Console.WriteLine("Mærke: "  + biler.Mærke  +   "   Bilens pris er: " + biler.BilPrisExAfgift    +    "   Købt: "   + biler.KøbsÅr   +   "    RegistreringNr: "  +  biler.RegistreringsNr + "     Den halvårlige ejerafgift er: "  + biler.HalvÅrligEjerafgift()  + " Rækkevidde: " + biler.Rækkevidde());
@@ -34,6 +41,14 @@ namespace Repetition_Inheritance
             foreach (BenzinBil benzin in benzinBils)
             {
                 Console.WriteLine("Mærke: "  + benzin.Mærke  +   "   Bilens pris er: " + benzin.BilPrisExAfgift    +    "   Købt: "   + benzin.KøbsÅr   +   "    RegistreringNr: "  +  benzin.RegistreringsNr + "     Den halvårlige ejerafgift er: "  + benzin.HalvÅrligEjerafgift()  + " Rækkevidde: " + benzin.Rækkevidde());
+
+            }
+
+            Console.WriteLine("===============================");
+
+            foreach (ElBil elBil in elBils)
+            {
+                Console.WriteLine("Mærke: "  + elBil.Mærke  +   "   Bilens pris er: " + elBil.BilPrisExAfgift    +    "   Købt: "   + elBil.KøbsÅr   +   "    RegistreringNr: "  +  elBil.RegistreringsNr + "     Den halvårlige ejerafgift er: "  + elBil.HalvÅrligEjerafgift()  + " Rækkevidde: " + elBil.Rækkevidde());
 
             }
             Console.ReadLine();
