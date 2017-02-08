@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repetition_Inheritance
 {
-    class ElBil : Bil
+    class ElBil : Bil, IElMotor
     {
         public ElBil(string Mærke, double PrisExAfgift, int KøbsÅr, string RegistreringsNr, int BatteryKapacitet, int KmPrKW) : base(Mærke, PrisExAfgift, KøbsÅr, RegistreringsNr)
         {
@@ -20,6 +20,11 @@ namespace Repetition_Inheritance
         public override int HalvÅrligEjerafgift()
         {
             return 0;
+        }
+
+        public int LadeTid()
+        {
+            return 5;
         }
 
         public override double RegistreringsAfgift()
