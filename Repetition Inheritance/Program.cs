@@ -76,10 +76,7 @@ namespace Repetition_Inheritance
                 {
                     ElBil elBil = bil as ElBil;
                     Console.WriteLine("Mærke: "  + elBil.Mærke  +   "   Bilens pris er: " + elBil.BilPrisExAfgift    +    "   Købt: "   + elBil.KøbsÅr   +   "    RegistreringNr: "  +  elBil.RegistreringsNr + "     Den halvårlige ejerafgift er: "  + elBil.HalvÅrligEjerafgift()  + " Rækkevidde: " + elBil.Rækkevidde());
-                    if (bil is IElMotor)
-                    {
-                        Console.WriteLine(" Oplade Tid " + elBil.LadeTid() );
-                    }
+                    
                 }
 
                 if (bil is DieselBil)
@@ -95,9 +92,16 @@ namespace Repetition_Inheritance
                     Console.WriteLine("Mærke: "  + benzin.Mærke  +   "   Bilens pris er: " + benzin.BilPrisExAfgift    +    "   Købt: "   + benzin.KøbsÅr   +   "    RegistreringNr: "  +  benzin.RegistreringsNr + "     Den halvårlige ejerafgift er: "  + benzin.HalvÅrligEjerafgift()  + " Rækkevidde: " + benzin.Rækkevidde());
                    
                 }
+                if (bil is IElMotor)
+                {
+                    IElMotor motor = bil as IElMotor;
+                    Console.WriteLine(" oplade tid " + motor.LadeTid());
+                }
                                
             }
             Console.ReadLine();
+            
+            // dank memes
         }
     }
 }
