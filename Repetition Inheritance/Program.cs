@@ -95,7 +95,7 @@ namespace Repetition_Inheritance
                 if (bil is IElMotor)
                 {
                     IElMotor motor = bil as IElMotor;
-                    Console.WriteLine(" oplade tid " + motor.LadeTid());
+                    Console.WriteLine(" oplade tid " + motor.LadeTid())
                 }
                                
             }
