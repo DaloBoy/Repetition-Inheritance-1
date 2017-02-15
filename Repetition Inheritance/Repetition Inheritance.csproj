@@ -47,6 +47,7 @@
     <Compile Include="Bil.cs" />
     <Compile Include="DieselBil.cs" />
     <Compile Include="ElBil.cs" />
+    <Compile Include="HalvÅrligEjerAfgiftException.cs" />
     <Compile Include="IBil.cs" />
     <Compile Include="IElMotor.cs" />
     <Compile Include="Program.cs" />

@@ -18,28 +18,42 @@ namespace Repetition_Inheritance
         public virtual double RegistreringsAfgift()
         {
             double regafgift = 0;
+            if (BilPrisExAfgift <= 0)
+            {
+
+                throw new ArgumentException("prisen må ikke være <= 0", "BilPrisExAfgift");
+            }
+            if (KøbsÅr < 2014)
+            {
+                throw new ArgumentException("this is some old shit");
+            }
+
+            
+
+                
             if (KøbsÅr <= 2014)
             {
                 if (BilPrisExAfgift <= 80500)
                 {
-                    regafgift = (BilPrisExAfgift*1.05)/100;
+                    regafgift = (BilPrisExAfgift*1.05);
                 }
                 if (BilPrisExAfgift > 80500)
                 {
-                    regafgift = (BilPrisExAfgift*1.8)/100;
+                    regafgift = (BilPrisExAfgift*1.8);
                 }
             }
             if (KøbsÅr >= 2015)
             {
                 if (BilPrisExAfgift <= 81700)
                 {
-                    regafgift = (BilPrisExAfgift * 1.05) / 100;
+                    regafgift = (BilPrisExAfgift * 1.05);
                 }
                 if (BilPrisExAfgift > 81700)
                 {
-                    regafgift = (BilPrisExAfgift * 1.8) / 100;
+                    regafgift = (BilPrisExAfgift * 1.8);
                 }
             }
+
             
             return regafgift;
         }

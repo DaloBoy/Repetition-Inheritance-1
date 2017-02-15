@@ -11,7 +11,7 @@ namespace Repetition_Inheritance
         static void Main(string[] args)
         {
             List<DieselBil> dieselBils = new List<DieselBil>();
-            dieselBils.Add(new DieselBil("BMW", 200000, 2006, 10, "23r23r", 69));
+            dieselBils.Add(new DieselBil("BMW", 0, 2006, 10, "23r23r", 69));
             dieselBils.Add(new DieselBil("Porche", 800000, 2015, 32,"hewh45h", 7));
             dieselBils.Add(new DieselBil("Skoda", 300000, 2004, 20,"w4h4h5h4", 6, false));
             dieselBils.Add(new DieselBil("Kia", 1500000, 2013, 15,"jt6tyrj", 10));
@@ -32,9 +32,9 @@ namespace Repetition_Inheritance
             elBils.Add(new ElBil("Tesla", 700000, 2017, "7UP9", 10, 60));
 
             List<IBil> bils = new List<IBil>();
-            bils.Add(new DieselBil("BMW", 200000, 2006, 10, "23r23r", 69));
-            bils.Add(new DieselBil("Porche", 800000, 2015, 32, "hewh45h", 7));
-            bils.Add(new DieselBil("Skoda", 300000, 2004, 20, "w4h4h5h4", 6, false));
+            bils.Add(new DieselBil("BMW", 0, 2006, 10, "23r23r", 69));
+            bils.Add(new DieselBil("Porche", 0, 2015, 32, "hewh45h", 7));
+            bils.Add(new DieselBil("Skoda", 0, 2004, 20, "w4h4h5h4", 6, false));
             bils.Add(new DieselBil("Kia", 1500000, 2013, 15, "jt6tyrj", 10));
             bils.Add(new DieselBil("Lamboghini", 2000000, 2014, 26, "gw54g4g", 8, false));
             bils.Add(new BenzinBil("BMW", 200000, 2004, 10, "q3t87gh", 9));
@@ -95,7 +95,7 @@ namespace Repetition_Inheritance
                 if (bil is IElMotor)
                 {
                     IElMotor motor = bil as IElMotor;
-                    Console.WriteLine(" oplade tid " + motor.LadeTid())
+                    Console.WriteLine(" oplade tid " + motor.LadeTid());
                 }
                                
             }

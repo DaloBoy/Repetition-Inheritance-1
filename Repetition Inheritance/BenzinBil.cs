@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repetition_Inheritance
 {
-   sealed class BenzinBil : Bil
+   public class BenzinBil : Bil
     {
         public BenzinBil(string Mærke, double PrisExAfgift, int KøbsÅr, int KmPrLiter, string RegistreringsNr, int Tank) : base(Mærke, PrisExAfgift, KøbsÅr, KmPrLiter, RegistreringsNr)
         {

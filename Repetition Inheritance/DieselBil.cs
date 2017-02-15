@@ -32,12 +32,18 @@ namespace Repetition_Inheritance
         
         public override int HalvÅrligEjerafgift()
         {
+
             int ejerafgift = 0;
+
+            if (KmPrLiter < 5)
+            {
+                throw new HalvÅrligEjerAfgiftException();
+            }
             if (KmPrLiter < 15)
             {
                 ejerafgift = 2000;
             }
-            if (KmPrLiter >= 15 || KmPrLiter <= 25)
+            else if (KmPrLiter >= 15 || KmPrLiter <= 25)
             {
                 ejerafgift = 1000;
             }

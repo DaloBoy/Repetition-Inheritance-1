@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repetition_Inheritance
 {
-    class ElBil : Bil, IElMotor
+    public class ElBil : Bil, IElMotor
     {
         public ElBil(string Mærke, double PrisExAfgift, int KøbsÅr, string RegistreringsNr, int BatteryKapacitet, int KmPrKW) : base(Mærke, PrisExAfgift, KøbsÅr, RegistreringsNr)
         {
@@ -34,22 +34,22 @@ namespace Repetition_Inheritance
             {
                 if (BilPrisExAfgift <= 80500)
                 {
-                    regafgift = (BilPrisExAfgift*1.05)/100;
+                    regafgift = (BilPrisExAfgift*1.05);
                 }
                 if (BilPrisExAfgift > 80500)
                 {
-                    regafgift = (BilPrisExAfgift*1.8)/100;
+                    regafgift = (BilPrisExAfgift*1.8);
                 }
             }
             if (KøbsÅr >= 2015)
             {
                 if (BilPrisExAfgift <= 81700)
                 {
-                    regafgift = (BilPrisExAfgift*1.05)/100;
+                    regafgift = (BilPrisExAfgift*1.05);
                 }
                 if (BilPrisExAfgift > 81700)
                 {
-                    regafgift = (BilPrisExAfgift*1.8)/100;
+                    regafgift = (BilPrisExAfgift*1.8);
                 }
             }
             regafgift = regafgift*0.2;
